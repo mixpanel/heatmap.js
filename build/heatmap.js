@@ -4,7 +4,7 @@
  * Copyright 2008-2016 Patrick Wied <heatmapjs@patrick-wied.at> - All rights reserved.
  * Dual licensed under MIT and Beerware license 
  *
- * :: 2025-05-14 11:21
+ * :: 2025-05-20 14:23
  */
 ;(function (name, context, factory) {
 
@@ -346,7 +346,7 @@ var Canvas2dRenderer = (function Canvas2dRendererClosure() {
     // @TODO:
     // conditional wrapper
 
-    canvas.style.cssText = shadowCanvas.style.cssText = 'position:absolute;left:0;top:0;';
+    canvas.style.cssText = shadowCanvas.style.cssText = 'position:absolute;left:0;top:0;z-index:1000;';
 
     container.style.position = 'relative';
     container.appendChild(canvas);
